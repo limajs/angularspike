@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="todoApp">
     <head>
         <meta charset="utf-8">
         <script src='lib/angular.js'></script>
+        <script src='app/todo.js'></script>
     </head>
-    <body>
+    <body ng-controller="TodoController">
         <h1>Demo</h1>
-        <input type="text" ng-model="name">
-        <span>Hello {{name}}</span>
+        <div>Logged on as {{userName}}</div>
+        <input type="text" ng-model="message">
+
+        <div>{{message}}</div>
     </body>
 </html>
